@@ -1,0 +1,219 @@
+/* ============================================================
+   Q-FM Cities — Theme Classes
+   Five color schemes:
+     1. mediumGray — dark gray
+     2. lightGray — light gray
+     3. richBlue — rich blue
+     4. limeGreen — lime green
+     5. brightPink — bright pink
+   ============================================================ */
+
+/* ---- mediumGray theme (dark gray) ---- */
+.theme-mediumGray {
+  --bg-body-start: #2a2a2a;
+  --bg-body-end: #3d3d3d;
+  --bg-container-start: #4a4a4a;
+  --bg-container-end: #383838;
+  --bg-album-start: #333333;
+  --bg-album-end: #282828;
+
+  --text-primary: #f0f0f0;
+  --text-muted: #b0b0b0;
+  --text-dim: #999999;
+  --text-dimmer: #808080;
+  --text-header: #c0c0c0;
+
+  --accent-primary: #808080;
+  --accent-light: #aaaaaa;
+  --accent-dark: #666666;
+  --accent-hover: #999999;
+  --accent-dark-hover: #777777;
+  --accent-badge-text: #bbbbbb;
+
+  --accent-05: rgba(128, 128, 128, 0.05);
+  --accent-20: rgba(128, 128, 128, 0.2);
+  --accent-30: rgba(128, 128, 128, 0.3);
+  --accent-35: rgba(128, 128, 128, 0.35);
+  --accent-40: rgba(128, 128, 128, 0.4);
+  --accent-50: rgba(128, 128, 128, 0.5);
+
+  --surface-03: rgba(255, 255, 255, 0.03);
+  --surface-05: rgba(255, 255, 255, 0.05);
+  --surface-06: rgba(255, 255, 255, 0.06);
+  --surface-08: rgba(255, 255, 255, 0.08);
+  --surface-10: rgba(255, 255, 255, 0.1);
+  --surface-12: rgba(255, 255, 255, 0.12);
+  --surface-15: rgba(255, 255, 255, 0.15);
+  --surface-20: rgba(255, 255, 255, 0.2);
+  --surface-30: rgba(255, 255, 255, 0.3);
+
+  --toast-bg: rgba(0, 0, 0, 0.8);
+}
+
+/* ---- lightGray theme (light gray) ---- */
+.theme-lightGray {
+  --bg-body-start: #d4d4d4;
+  --bg-body-end: #cccccc;
+  --bg-container-start: #e0e0e0;
+  --bg-container-end: #d0d0d0;
+  --bg-album-start: #c8c8c8;
+  --bg-album-end: #b8b8b8;
+
+  --text-primary: #1a1a1a;
+  --text-muted: #555555;
+  --text-dim: #666666;
+  --text-dimmer: #777777;
+  --text-header: #444444;
+
+  --accent-primary: #999999;
+  --accent-light: #bbbbbb;
+  --accent-dark: #777777;
+  --accent-hover: #aaaaaa;
+  --accent-dark-hover: #888888;
+  --accent-badge-text: #888888;
+
+  --accent-05: rgba(153, 153, 153, 0.08);
+  --accent-20: rgba(153, 153, 153, 0.2);
+  --accent-30: rgba(153, 153, 153, 0.3);
+  --accent-35: rgba(153, 153, 153, 0.35);
+  --accent-40: rgba(153, 153, 153, 0.4);
+  --accent-50: rgba(153, 153, 153, 0.5);
+
+  --surface-03: rgba(0, 0, 0, 0.03);
+  --surface-05: rgba(0, 0, 0, 0.05);
+  --surface-06: rgba(0, 0, 0, 0.06);
+  --surface-08: rgba(0, 0, 0, 0.08);
+  --surface-10: rgba(0, 0, 0, 0.1);
+  --surface-12: rgba(0, 0, 0, 0.08);
+  --surface-15: rgba(0, 0, 0, 0.12);
+  --surface-20: rgba(0, 0, 0, 0.15);
+  --surface-30: rgba(0, 0, 0, 0.2);
+
+  --toast-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* ---- richBlue theme (rich blue) ---- */
+.theme-richBlue {
+  --bg-body-start: #001a3d;
+  --bg-body-end: #002855;
+  --bg-container-start: #003d80;
+  --bg-container-end: #002855;
+  --bg-album-start: #0a1a3a;
+  --bg-album-end: #051030;
+
+  --text-primary: #ffffff;
+  --text-muted: #a8c8e8;
+  --text-dim: #88b0d8;
+  --text-dimmer: #6a90b8;
+  --text-header: #a0b8d0;
+
+  --accent-primary: #1a73e8;
+  --accent-light: #5a9af0;
+  --accent-dark: #0d4da8;
+  --accent-hover: #3a88f0;
+  --accent-dark-hover: #1558c0;
+  --accent-badge-text: #80b8f8;
+
+  --accent-05: rgba(26, 115, 232, 0.05);
+  --accent-20: rgba(26, 115, 232, 0.2);
+  --accent-30: rgba(26, 115, 232, 0.3);
+  --accent-35: rgba(26, 115, 232, 0.35);
+  --accent-40: rgba(26, 115, 232, 0.4);
+  --accent-50: rgba(26, 115, 232, 0.5);
+
+  --surface-03: rgba(255, 255, 255, 0.03);
+  --surface-05: rgba(255, 255, 255, 0.05);
+  --surface-06: rgba(255, 255, 255, 0.06);
+  --surface-08: rgba(255, 255, 255, 0.08);
+  --surface-10: rgba(255, 255, 255, 0.1);
+  --surface-12: rgba(255, 255, 255, 0.12);
+  --surface-15: rgba(255, 255, 255, 0.15);
+  --surface-20: rgba(255, 255, 255, 0.2);
+  --surface-30: rgba(255, 255, 255, 0.3);
+
+  --toast-bg: rgba(0, 0, 0, 0.8);
+}
+
+/* ---- limeGreen theme (lime green) ---- */
+.theme-limeGreen {
+  --bg-body-start: #0a1a00;
+  --bg-body-end: #102800;
+  --bg-container-start: #183800;
+  --bg-container-end: #102800;
+  --bg-album-start: #122a08;
+  --bg-album-end: #081a00;
+
+  --text-primary: #f0ffe0;
+  --text-muted: #a8e888;
+  --text-dim: #88d868;
+  --text-dimmer: #68b848;
+  --text-header: #a8e898;
+
+  --accent-primary: #32cd32;
+  --accent-light: #66e866;
+  --accent-dark: #1a8a1a;
+  --accent-hover: #4de04d;
+  --accent-dark-hover: #22aa22;
+  --accent-badge-text: #80f080;
+
+  --accent-05: rgba(50, 205, 50, 0.05);
+  --accent-20: rgba(50, 205, 50, 0.2);
+  --accent-30: rgba(50, 205, 50, 0.3);
+  --accent-35: rgba(50, 205, 50, 0.35);
+  --accent-40: rgba(50, 205, 50, 0.4);
+  --accent-50: rgba(50, 205, 50, 0.5);
+
+  --surface-03: rgba(255, 255, 255, 0.03);
+  --surface-05: rgba(255, 255, 255, 0.05);
+  --surface-06: rgba(255, 255, 255, 0.06);
+  --surface-08: rgba(255, 255, 255, 0.08);
+  --surface-10: rgba(255, 255, 255, 0.1);
+  --surface-12: rgba(255, 255, 255, 0.12);
+  --surface-15: rgba(255, 255, 255, 0.15);
+  --surface-20: rgba(255, 255, 255, 0.2);
+  --surface-30: rgba(255, 255, 255, 0.3);
+
+  --toast-bg: rgba(0, 0, 0, 0.8);
+}
+
+/* ---- brightPink theme (bright pink) ---- */
+.theme-brightPink {
+  --bg-body-start: #2d0020;
+  --bg-body-end: #4d0035;
+  --bg-container-start: #6d0040;
+  --bg-container-end: #4d0035;
+  --bg-album-start: #3a1a30;
+  --bg-album-end: #2a0a20;
+
+  --text-primary: #ffffff;
+  --text-muted: #e8b8d8;
+  --text-dim: #d8a0c8;
+  --text-dimmer: #b880a8;
+  --text-header: #d0a8c0;
+
+  --accent-primary: #ff1493;
+  --accent-light: #ff5ab8;
+  --accent-dark: #cc0066;
+  --accent-hover: #ff3aa8;
+  --accent-dark-hover: #dd1177;
+  --accent-badge-text: #ff80c8;
+
+  --accent-05: rgba(255, 20, 147, 0.05);
+  --accent-20: rgba(255, 20, 147, 0.2);
+  --accent-30: rgba(255, 20, 147, 0.3);
+  --accent-35: rgba(255, 20, 147, 0.35);
+  --accent-40: rgba(255, 20, 147, 0.4);
+  --accent-50: rgba(255, 20, 147, 0.5);
+
+  --surface-03: rgba(255, 255, 255, 0.03);
+  --surface-05: rgba(255, 255, 255, 0.05);
+  --surface-06: rgba(255, 255, 255, 0.06);
+  --surface-08: rgba(255, 255, 255, 0.08);
+  --surface-10: rgba(255, 255, 255, 0.1);
+  --surface-12: rgba(255, 255, 255, 0.12);
+  --surface-15: rgba(255, 255, 255, 0.15);
+  --surface-20: rgba(255, 255, 255, 0.2);
+  --surface-30: rgba(255, 255, 255, 0.3);
+
+  --toast-bg: rgba(0, 0, 0, 0.8);
+}

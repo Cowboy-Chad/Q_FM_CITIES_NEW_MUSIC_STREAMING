@@ -1,0 +1,133 @@
+/* ============================================================
+   Q-FM Cities — Playlist Styles
+   Track list, playlist items, search bar
+   ============================================================ */
+
+.playlist-section {
+  border-top: 1px solid var(--surface-08);
+  padding-top: 15px;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.playlist-header h3 {
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.playlist-header .count {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.playlist {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.playlist::-webkit-scrollbar {
+  width: 4px;
+}
+
+.playlist::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-playlist);
+  border-radius: 2px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-playlist);
+  border-radius: 2px;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-dim);
+}
+
+.playlist-item:hover {
+  background: var(--surface-06);
+}
+
+.playlist-item.active {
+  background: var(--accent-20);
+  border: 1px solid var(--accent-30);
+  animation: pulse-active 2s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+
+.playlist-item .track-info {
+  flex: 1;
+}
+
+.playlist-item .track-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.playlist-item .track-artist {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.playlist-item .track-duration {
+  font-size: 12px;
+  color: var(--text-dimmer);
+  font-variant-numeric: tabular-nums;
+}
+
+.playlist-item .play-indicator {
+  color: var(--accent-primary);
+  font-size: 14px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* ---- SEARCH ---- */
+.search-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 16px 10px 40px;
+  border-radius: 10px;
+  border: 1px solid var(--surface-10);
+  background: var(--surface-06);
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-container input::placeholder {
+  color: var(--text-dimmer);
+}
+
+.search-container input:focus {
+  border-color: var(--accent-40);
+  background: var(--surface-08);
+  box-shadow: 0 0 20px var(--accent-05);
+}
+
+.search-container .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-dimmer);
+  font-size: 16px;
+}

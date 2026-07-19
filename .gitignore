@@ -1,0 +1,31 @@
+# === Node ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Build ===
+dist/
+build/
+
+# === Environment (contains real API keys when deployed) ===
+.env
+.env.local
+.env.production
+.env.development
+
+# === IDE / OS ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === Supabase credentials (placeholder today, real keys later) ===
+src/lib/supabase.js
+
+# === SSH keys (NEVER commit these) ===
+g-fm-ssh-key-file
+g-fm-ssh-key-file.pub

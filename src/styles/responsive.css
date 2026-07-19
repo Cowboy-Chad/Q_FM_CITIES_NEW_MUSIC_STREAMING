@@ -1,0 +1,118 @@
+/* ============================================================
+   Q-FM Cities — Responsive Styles
+   All media queries
+   ============================================================ */
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 20px 16px;
+    min-height: auto;
+    max-height: 95vh;
+  }
+
+  .album-art {
+    width: 140px;
+    height: 140px;
+  }
+
+  .controls {
+    gap: 12px;
+  }
+
+  .controls button {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .controls .play-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+  }
+
+  .btn {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+
+  .playlist {
+    max-height: 120px;
+  }
+
+  .theme-btn {
+    top: 8px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .theme-dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    padding: 50px 40px;
+  }
+}
+
+/* Subscription responsive */
+@media (max-width: 700px) {
+  .sub-plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-modal {
+    padding: 24px 16px 20px;
+  }
+
+  .sub-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .sub-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-cta-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sub-cta-text {
+    width: 100%;
+  }
+}
+
+/* PayPal responsive */
+@media (max-height: 700px) {
+  .paypal-modal {
+    padding: 24px 20px 16px;
+  }
+
+  .paypal-logo {
+    margin-bottom: 16px;
+  }
+
+  .paypal-logo svg {
+    height: 26px;
+  }
+
+  .paypal-title {
+    font-size: 18px;
+  }
+
+  .paypal-plans {
+    gap: 8px;
+  }
+
+  .paypal-plan {
+    padding: 12px 16px;
+  }
+}

@@ -1,0 +1,83 @@
+/* ============================================================
+   Q-FM Cities — CSS Custom Properties (Variables)
+   Base theme variables and shared animations
+   ============================================================ */
+
+/* ---- BASE THEME: System Default (medium gray) ---- */
+:root {
+  /* Background gradients */
+  --bg-body-start: #2a2a2a;
+  --bg-body-end: #3d3d3d;
+  --bg-container-start: #4a4a4a;
+  --bg-container-end: #383838;
+  --bg-album-start: #333333;
+  --bg-album-end: #282828;
+
+  /* Text */
+  --text-primary: #f0f0f0;
+  --text-muted: #b0b0b0;
+  --text-dim: #999999;
+  --text-dimmer: #808080;
+  --text-header: #c0c0c0;
+
+  /* Accent */
+  --accent-primary: #888888;
+  --accent-light: #aaaaaa;
+  --accent-dark: #666666;
+  --accent-hover: #999999;
+  --accent-dark-hover: #777777;
+  --accent-badge-text: #bbbbbb;
+
+  /* Accent with alpha */
+  --accent-05: rgba(136, 136, 136, 0.05);
+  --accent-20: rgba(136, 136, 136, 0.2);
+  --accent-30: rgba(136, 136, 136, 0.3);
+  --accent-35: rgba(136, 136, 136, 0.35);
+  --accent-40: rgba(136, 136, 136, 0.4);
+  --accent-50: rgba(136, 136, 136, 0.5);
+
+  /* Surface overlays (white-based for dark themes) */
+  --surface-03: rgba(255, 255, 255, 0.03);
+  --surface-05: rgba(255, 255, 255, 0.05);
+  --surface-06: rgba(255, 255, 255, 0.06);
+  --surface-08: rgba(255, 255, 255, 0.08);
+  --surface-10: rgba(255, 255, 255, 0.1);
+  --surface-12: rgba(255, 255, 255, 0.12);
+  --surface-15: rgba(255, 255, 255, 0.15);
+  --surface-20: rgba(255, 255, 255, 0.2);
+  --surface-30: rgba(255, 255, 255, 0.3);
+
+  /* Shadows */
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-dark-25: rgba(0, 0, 0, 0.25);
+  --shadow-dark-40: rgba(0, 0, 0, 0.4);
+
+  /* Danger */
+  --danger-color: #ff6b6b;
+  --danger-border-30: rgba(255, 50, 50, 0.3);
+  --danger-border-50: rgba(255, 50, 50, 0.5);
+  --danger-bg-10: rgba(255, 50, 50, 0.1);
+
+  /* Toast */
+  --toast-bg: rgba(0, 0, 0, 0.8);
+
+  /* Scrollbar */
+  --scrollbar-track: var(--surface-05);
+  --scrollbar-thumb: var(--surface-20);
+  --scrollbar-track-playlist: var(--surface-03);
+  --scrollbar-thumb-playlist: var(--surface-15);
+
+  /* Transitions */
+  --theme-transition: background 0.4s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pulsing glow animation for the active playlist track */
+@keyframes pulse-active {
+  0%, 100% { box-shadow: 0 0 8px var(--accent-30), inset 0 0 8px var(--accent-05); }
+  50%      { box-shadow: 0 0 16px var(--accent-50), inset 0 0 16px var(--accent-20); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
