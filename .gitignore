@@ -26,6 +26,9 @@ Thumbs.db
 # === Supabase credentials (placeholder today, real keys later) ===
 src/lib/supabase.js
 
+# === Music files (too large for Git — keep local only) ===
+music/
+
 # === SSH keys (NEVER commit these) ===
 g-fm-ssh-key-file
 g-fm-ssh-key-file.pub
