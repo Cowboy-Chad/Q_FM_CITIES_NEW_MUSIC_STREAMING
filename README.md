@@ -133,20 +133,6 @@ The app uses `import.meta.glob('/music/**/*.{mp3,m4a}')` to auto-discover audio 
 └── plans/                     # Development plans
 ```
 
----
-
-## Git LFS (Removed)
-
-Git LFS was **permanently removed** from this repository. Cowboy Chad does not anticipate it being needed for the future of this music-playing app — the audio files are small enough to track directly in Git.
-
-If you have a local clone with LFS hooks still active, remove them:
-
-```sh
-rm .git/hooks/pre-push
-```
-
----
-
 ## License
 
 Copyright © 2026 Chad Vincent Estell
